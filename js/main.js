@@ -16,8 +16,6 @@
  */
 function FizzBuzzer(N)
 {
-  console.log("N :" + N);
-
   // retrieve the element to write the results to
   var table = document.getElementById('table');
 
