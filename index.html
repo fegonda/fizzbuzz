@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Blank</title>
+    <title>FizzBuzzer - (by Felix Gonda)</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -19,15 +19,31 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script src="js/main.js"></script>
 </head>
 
-<body>
+<body onload="FizzBuzzer(document.getElementById('input').value);">
 
 <div class="container">
 
-    <h1>Hello World!</h1>
-    <p class="lead">This is something!</p>
-
+    <h1>Hello, Welcome to FizzBuzzer</h1>
+    <p>by Felix Gonda</p>
+    <hr>
+    <p class="lead">
+      This page demonstrate the functionality of FizzBuzzer,
+      a function that takes a number N as a parameter and prints
+      the numbers from 1 to N to the page. But for multiples of three print
+      "Fizz" instead of the number and for the multiples of five print "Buzz".
+       For numbers which are multiples of both three and five print "FizzBuzz".
+     Try it out by entering a number on the input box and press enter:
+   </p>
+   INPUT:<br>
+   <input type="text" id="input" value="30" />
+   <input type="button" id="submit" value="submit" onclick="FizzBuzzer(document.getElementById('input').value);" />
+   <br><br>
+   OUTPUT:
+    <div id="table"></div>
+    <hr>
 </div><!-- /.container -->
 
 
